@@ -33,7 +33,7 @@ const HomepageView = () => {
       <Header />
       <Sidebar />
       <Switch>
-        <Route path="/homepage/comments">
+        <Route path="/comments">
           <main className={classes.appContent}>
             <Content />
           </main>

@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
 import CloudIcon from "@material-ui/icons/Cloud";
+import CommentIcon from '@material-ui/icons/Comment';
 import { makeStyles } from "@material-ui/core/styles";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -38,6 +39,14 @@ const Sidebar = () => {
           </ListItemIcon>
           <ListItemText primary="Login" />
         </ListItem>
+
+        <ListItem button component={RouterLink} to="/comments">
+          <ListItemIcon>
+            <CommentIcon />
+          </ListItemIcon>
+          <ListItemText primary="Comments" />
+        </ListItem>
+
         <ListItem button component={RouterLink} to="/weather">
           <ListItemIcon>
             <CloudIcon />

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomepageView from "./views/HomepageView";
 import LoginView from "./views/LoginView";
 import WeatherView from "./views/WeatherView";
+import CommentsView from "./views/CommentsView";
 
 ReactDOM.render(
   <Router>
@@ -15,11 +16,17 @@ ReactDOM.render(
       <Route path="/login">
         <LoginView />
       </Route>
+
       <Route path="/homepage">
         <HomepageView />
       </Route>
+
       <Route path="/weather">
         <WeatherView />
+      </Route>
+
+      <Route path="/comments">
+        <CommentsView />
       </Route>
     </Switch>
   </Router>,
